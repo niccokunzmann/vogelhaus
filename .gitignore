@@ -58,3 +58,4 @@ target/
 
 # Repository
 /picture.jpg
+/webserver.pid
