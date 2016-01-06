@@ -12,7 +12,7 @@ location = os.path.dirname(__file__)
 static_files = os.path.join(location, 'static')
 
 class Picture:
-    refresh_after_seconds = 5
+    refresh_after_seconds = 2
     
     def __init__(self):
         self.content = self.get_content()
