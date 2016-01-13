@@ -36,8 +36,13 @@ function sendRequestToSource(image, location, callback) {
 }
 
 function setImage(xhttp, image) {
-  // from http://stackoverflow.com/a/19680728
-  window.URL.revokeObjectURL(image.getAttribute("src"));
+  if (image.getAttribute("deleteBlob") == "false") {
+    // do not delete the blob i.e. if we saved the image
+    image.setAttribute("deleteBlob", "true");
+  } else {
+    // from http://stackoverflow.com/a/19680728
+    window.URL.revokeObjectURL(image.getAttribute("src"));
+  }
   var blob = xhttp.response;
   var imgSrc = URL.createObjectURL(blob);
   image.setAttribute("src", imgSrc);
