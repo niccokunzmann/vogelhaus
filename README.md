@@ -20,3 +20,8 @@ Setup WIFI HotSpot
 ------------------
 
 If you would like to set the Raspberry Pi up so it serves an own WIFI, you can follow the tutorial at [www.pi-point.co.uk/documentation](http://www.pi-point.co.uk/documentation/).
+
+Related Work
+------------
+
+You can enchance your [bird house with an infrared LED](https://projects.raspberrypi.org/en/projects/infrared-bird-box) to see birds nesting.
